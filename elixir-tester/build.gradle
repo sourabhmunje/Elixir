@@ -1,0 +1,55 @@
+group 'org.elixir.tester'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.1.3-2'
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'kotlin'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    //compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    // mandatory dependencies for using Spock
+    //compile "org.codehaus.groovy:groovy-all:2.4.1"
+    //compile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
+    // compile 'org.apache.poi:poi:3.9'
+    compile 'org.apache.poi:poi-ooxml:3.9'
+    compile 'org.json:json:20090211'
+    compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+    compile 'javax.json:javax.json-api:1.0'
+    compile 'com.google.code.gson:gson:1.7.2'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.0.1'
+    compile 'org.jsonschema2pojo:jsonschema2pojo-gradle-plugin:0.4.0'
+    compile 'javax.mail:mail:1.4.1'
+    compile 'commons-io:commons-io:2.4'
+    compile 'log4j:log4j:1.2.16'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.41.0'
+    compile group: 'org.freemarker', name: 'freemarker', version: '2.3.23'
+    //compile 'eu.appsatori:gradle-fatjar-plugin:0.3'
+
+    compile 'org.freemarker:freemarker:2.3.22'
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}

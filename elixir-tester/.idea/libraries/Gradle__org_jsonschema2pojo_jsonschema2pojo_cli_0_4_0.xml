@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jsonschema2pojo:jsonschema2pojo-cli:0.4.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jsonschema2pojo/jsonschema2pojo-cli/0.4.0/2c4bc7463c98ed2615e5972d799bd554c00377f3/jsonschema2pojo-cli-0.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jsonschema2pojo/jsonschema2pojo-cli/0.4.0/d63beba0846581d1a1d2be9d232fb30f0af9468f/jsonschema2pojo-cli-0.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
