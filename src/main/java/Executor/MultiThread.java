@@ -11,7 +11,6 @@ public class MultiThread extends Thread {
         SC = sc;
     }
 
-
     public void run() {
         SC.run();
         System.out.println("Thread " +  threadName + " exiting.");
@@ -24,6 +23,4 @@ public class MultiThread extends Thread {
             t.start ();
         }
     }
-
-
 }

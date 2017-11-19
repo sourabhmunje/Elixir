@@ -15,14 +15,11 @@ public class FreemarkerUtil {
 
     public String replace(String body, HashMap<String, String> mapWithData)
             throws TemplateException, IOException {
-
         Configuration cfg = new Configuration();
         StringWriter output = new StringWriter();
-
         Template tmpl = new Template(Long.valueOf(System.currentTimeMillis())
                 .toString(), new StringReader(body), null);
         tmpl.process(mapWithData, output);
         return output.toString();
-
     }
 }

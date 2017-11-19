@@ -13,29 +13,20 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class SeleniumFunctions {
-
-//    SeleniumFunctions seleniumFunctions;
-//
-//    public SeleniumFunctions(){
-//        seleniumFunctions =  new SeleniumFunctions();
-//    }
     static WebDriver driver;
-        //WebDriver driver;
-
     public boolean open(String browser, String url){
-
-
-//        DesiredCapabilities dc = DesiredCapabilities.chrome();
-//        dc.setCapability("version","");
-//        dc.setCapability("platform","LINUX");
-//        System.setProperty("webdriver.chrome.driver", obj.PATH_CHROME_DRIVER);
-//        WebDriver driver = new ChromeDriver();
-//        try {
-//            driver = new RemoteWebDriver(new URL("http://localhost:4446/wd/hub"), dc);
-//        } catch (MalformedURLException e) {
-//            e.printStackTrace();
-//        }
-
+        /** To use docker hub
+        DesiredCapabilities dc = DesiredCapabilities.chrome();
+        dc.setCapability("version","");
+        dc.setCapability("platform","LINUX");
+        System.setProperty("webdriver.chrome.driver", obj.PATH_CHROME_DRIVER);
+        WebDriver driver = new ChromeDriver();
+        try {
+            driver = new RemoteWebDriver(new URL("http://localhost:4446/wd/hub"), dc);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+         **/
         System.setProperty("webdriver.chrome.driver", "./chromedriver");
         driver = new ChromeDriver();
         driver.manage().deleteAllCookies();

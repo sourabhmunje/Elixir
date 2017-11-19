@@ -35,7 +35,6 @@ public class ScenarioExecutor implements Runnable {
     }
 
     public synchronized void run(){
-  // public void run(){
         SeleniumFunctions seleniumFunctions = new SeleniumFunctions();
         for (int i = 1; i <= xlsReader.getRowCount(nameOfTab); i++) {
             if (tags.contains(xlsReader.getCellData(nameOfTab, 0, i))) {
